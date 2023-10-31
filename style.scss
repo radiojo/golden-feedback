@@ -1,0 +1,135 @@
+:root {
+  --primary: #0d2553;
+  --secondary: #0174c7;
+  --tertiary: #0bc2e2;
+  --emphasis: #7dd852;
+  --orange: #ff914d;
+}
+
+section, .hero.is-medium {
+  background-color: var(--primary);
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    text-align: center;
+  }
+
+  .striked {
+    text-decoration: line-through;
+    text-decoration-color: var(--emphasis);
+    text-decoration-thickness: 6px;
+  }
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+.emphasis-color {
+  color: var(--emphasis);
+}
+
+.secondary-color {
+  color: var(--secondary);
+}
+
+.tertiary-color {
+  color: var(--tertiary);
+}
+
+.button.cta {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  margin: 1rem 0 1rem 0;
+}
+
+.damien {
+  & .before-box {
+    background-color: var(--orange);
+  }
+
+  & .after-box {
+    background-color: var(--emphasis);
+  }
+
+  & .box-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.damien, .timothy {
+  & .image.that-is {
+    width: 20rem;
+  }
+}
+
+.arrows {
+  width: 5rem;
+  height: 5rem;
+  fill: white;
+}
+
+.checkmark-icon {
+  fill: var(--emphasis);
+  width: 3rem;
+  height: 3rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.my-method-benefits {
+  padding-top: 5rem;
+}
+
+.why-that-works {
+  font-family: 'Caveat', 'IBM Plex Sans', sans-serif;
+  font-size: 4rem;
+  text-shadow: var(--emphasis) 1px 0 10px;
+}
+
+.sans-ma-methode {
+  padding-bottom: 5rem;
+  background-color: #375974;
+  margin-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 8rem;
+}
+
+/*
+.non-cest-pas-bien {
+  fill: #ff3131;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  text-align: center;
+  bottom: -4.375rem;
+}*/
